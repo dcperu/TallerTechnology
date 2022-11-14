@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CarViewModel>
+@{    
+    ViewData["Title"] = "Car Store";
+}
+<h1>CAR STORE</h1>
+
+<div class="row">
+    <div class="col-12">
+        <form asp-action="Guess" method="post">
+        <div class="mb-3 row">
+            Guess Car Price:
+            <div class="col-sm-10">
+              @Html.TextBox("Price")
+            </div>
+          </div>
+          <div class="mb-3 row">            
+            <div class="col-sm-10">
+              <input type="submit" value="Send" />
+            </div>
+          </div>
+        </form>
+    </div>    
+</div>
+
+@foreach(var car in Model){
+
+    <div class="card">
+      <div class="card-header">
+        @car.Make
+      </div>
+      <div class="card-body">
+         <div class="mb-3 row">
+            @Html.DisplayNameFor(c => car.Model):
+            <div class="col-sm-10">
+              @Html.Label(car.Model)
+            </div>
+          </div>
+          <div class="mb-3 row">
+            @Html.DisplayNameFor(c => car.Year):
+            <div class="col-sm-10">
+              @Html.Label(car.Year.ToString())
+            </div>
+          </div>
+          <div class="mb-3 row">
+            @Html.DisplayNameFor(c => car.Doors):
+            <div class="col-sm-10">
+              @Html.Label(car.Doors.ToString())
+            </div>
+          </div>
+          <div class="mb-3 row">
+            @Html.DisplayNameFor(c => car.Color):
+            <div class="col-sm-10">
+              @Html.Label(car.Color)
+            </div>
+          </div>
+      </div>
+    </div>
+}

@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTWebApp", "TTWebApp\TTWebApp.csproj", "{5C1C917E-9797-497D-B5FF-E1FEAEED3BAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Layer", "Application Layer", "{52BB4982-44AB-4E35-BE7C-5B8307D00C33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Core", "Application.Core\Application.Core.csproj", "{6BBD4888-5C34-4C79-89D0-3481D6A15A6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Layer", "Domain Layer", "{96CF2F29-26D3-40EE-B3C0-8675CD7ACF64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Core", "Domain.Core\Domain.Core.csproj", "{1755FA6B-ACD9-4846-B29B-73EA8E420FED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{097C00C4-188B-4547-BAFE-20D9571F7B52}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTOs", "DTOs\DTOs.csproj", "{AD47C941-0B7F-4616-9846-385F46AB59E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTWebApi", "TTWebApi\TTWebApi.csproj", "{8F60C475-9781-41D6-8993-ED637876B470}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EDF1365A-9036-4DCA-B657-DFCBD6B48285}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\SQL Server Management Studio\TTScript.sql = ..\..\..\..\Documents\SQL Server Management Studio\TTScript.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C1C917E-9797-497D-B5FF-E1FEAEED3BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1C917E-9797-497D-B5FF-E1FEAEED3BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1C917E-9797-497D-B5FF-E1FEAEED3BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1C917E-9797-497D-B5FF-E1FEAEED3BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BBD4888-5C34-4C79-89D0-3481D6A15A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBD4888-5C34-4C79-89D0-3481D6A15A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBD4888-5C34-4C79-89D0-3481D6A15A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBD4888-5C34-4C79-89D0-3481D6A15A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1755FA6B-ACD9-4846-B29B-73EA8E420FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1755FA6B-ACD9-4846-B29B-73EA8E420FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1755FA6B-ACD9-4846-B29B-73EA8E420FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1755FA6B-ACD9-4846-B29B-73EA8E420FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD47C941-0B7F-4616-9846-385F46AB59E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD47C941-0B7F-4616-9846-385F46AB59E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD47C941-0B7F-4616-9846-385F46AB59E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD47C941-0B7F-4616-9846-385F46AB59E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F60C475-9781-41D6-8993-ED637876B470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F60C475-9781-41D6-8993-ED637876B470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F60C475-9781-41D6-8993-ED637876B470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F60C475-9781-41D6-8993-ED637876B470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6BBD4888-5C34-4C79-89D0-3481D6A15A6A} = {52BB4982-44AB-4E35-BE7C-5B8307D00C33}
+		{1755FA6B-ACD9-4846-B29B-73EA8E420FED} = {96CF2F29-26D3-40EE-B3C0-8675CD7ACF64}
+		{AD47C941-0B7F-4616-9846-385F46AB59E2} = {097C00C4-188B-4547-BAFE-20D9571F7B52}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55C6DF65-29BE-4C94-B2DE-44A4ECADB051}
+	EndGlobalSection
+EndGlobal
